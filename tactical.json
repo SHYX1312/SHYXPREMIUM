@@ -1,11 +1,8 @@
 {
-  "name": "Tactical Shooters",
-  "description": "Optimizations for tactical games",
-  "tweaks": [
-    "Ultimate Performance",
-    "CPU Priority",
-    "HPET Disable",
-    "USB Selective Suspend",
-    "Game Mode"
+  "name": "Tactical",
+  "recommended": [
+    "DisableGameBarDVR",
+    "EnableGameMode",
+    "ReduceTelemetry"
   ]
 }
