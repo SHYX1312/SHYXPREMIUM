@@ -1,0 +1,13 @@
+{
+  "name": "FPS Competitive",
+  "description": "Maximum performance for FPS games",
+  "tweaks": [
+    "Ultimate Performance",
+    "CPU Priority",
+    "HPET Disable",
+    "Game Mode",
+    "Game Bar & DVR",
+    "SysMain Disable",
+    "Telemetry Reduction"
+  ]
+}

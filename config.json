@@ -1,0 +1,17 @@
+{
+  "version": "2.2.0",
+  "name": "SHYX TWEAKS PREMIUM",
+  "compatible_games": [
+    "Fortnite",
+    "Counter-Strike 2",
+    "Valorant",
+    "Apex Legends",
+    "Call of Duty: Warzone",
+    "Rainbow Six Siege",
+    "Overwatch 2",
+    "PUBG: Battlegrounds",
+    "Escape from Tarkov",
+    "The Finals"
+  ],
+  "anti_cheat_safe": true
+}

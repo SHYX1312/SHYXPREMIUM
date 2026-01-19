@@ -1,0 +1,11 @@
+{
+  "name": "Battle Royale",
+  "description": "Balanced optimizations for BR games",
+  "tweaks": [
+    "CPU Priority",
+    "Game Mode",
+    "GPU Scheduling",
+    "SysMain Disable",
+    "Telemetry Reduction"
+  ]
+}
