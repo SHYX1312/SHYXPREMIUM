@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "displayCounts": {
+    "Latency": 500,
+    "Privacy": 100,
+    "Gaming": 120,
+    "Network": 60,
+    "Input": 40,
+    "Power": 30,
+    "GameSpecific": 90
+  },
+  "tweaks": [
+    {
+      "key": "GameMode",
+      "category": "Latency",
+      "name": "Enable Game Mode",
+      "apply": ["reg add \"HKCU\\SOFTWARE\\Microsoft\\GameBar\" /v AutoGameModeEnabled /t REG_DWORD /d 1 /f"],
+      "revert": ["reg add \"HKCU\\SOFTWARE\\Microsoft\\GameBar\" /v AutoGameModeEnabled /t REG_DWORD /d 0 /f"],
+      "risk": "Safe",
+      "reboot": false
+    },
+    {
+      "key": "FortniteConfig",
+      "category": "GameSpecific",
+      "name": "Fortnite Competitive Config",
+      "apply": ["(handled by EXE)"],
+      "revert": ["(handled by EXE)"],
+      "risk": "Safe",
+      "reboot": false
+    }
+  ]
+}

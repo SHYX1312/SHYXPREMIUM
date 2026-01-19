@@ -7,6 +7,8 @@ $ReleaseBase = "https://github.com/SHYX1312/SHYXPREMIUM/releases/latest/download
 
 $Assets = @(
   "SHYX_TWEAKS_PREMIUM.exe",
+  "version.json",
+  "tweaks.json",
   "config.json",
   "fps-competitive.json",
   "battle-royale.json",
