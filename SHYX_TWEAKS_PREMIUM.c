@@ -445,9 +445,9 @@ static void LV_Populate(void) {
         it.pszText = (LPSTR)gTweaks[i].name;
         it.lParam = (LPARAM)i;
 
-        int r = ListView_InsertItemA(gList, &it);
-        ListView_SetItemTextA(gList, r, 1, (LPSTR)gTweaks[i].desc);
-        ListView_SetItemTextA(gList, r, 2, (LPSTR)(gTweaks[i].applied ? "Applied" : "Not Applied"));
+        int r = ListView_InsertItem(gList, &it);
+        ListView_SetItemText(gList, r, 1, (LPSTR)gTweaks[i].desc);
+        ListView_SetItemText(gList, r, 2, (LPSTR)(gTweaks[i].applied ? "Applied" : "Not Applied"));
         ListView_SetCheckState(gList, r, gTweaks[i].selected ? TRUE : FALSE);
         row++;
     }
@@ -791,7 +791,7 @@ static LRESULT CALLBACK WndProc(HWND h, UINT msg, WPARAM w, LPARAM l) {
                 LVITEMA it = {0};
                 it.mask = LVIF_PARAM;
                 it.iItem = n->iItem;
-                if (ListView_GetItemA(gList, &it)) {
+                if (ListView_GetItem(gList, &it)) {
                     int idx = (int)it.lParam;
                     if (idx >= 0 && idx < gTweakCount) {
                         BOOL checked = ListView_GetCheckState(gList, n->iItem);
