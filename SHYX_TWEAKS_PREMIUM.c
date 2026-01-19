@@ -1,6 +1,7 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <commctrl.h>
+#include <shellapi.h>
 #include <stdio.h>
 
 #pragma comment(lib, "comctl32.lib")
@@ -162,7 +163,7 @@ static LRESULT CALLBACK WndProc(HWND h, UINT m, WPARAM w, LPARAM l) {
         int y = 70;
         for (int i=0;i<gTweakCount;i++) {
             HWND cb = CreateWindowA("BUTTON", gTweaks[i].name, WS_CHILD|WS_VISIBLE|BS_AUTOCHECKBOX,
-                                    20, y, 320, 20, h, (HMENU)(ID_CHECK_START+i), 0, 0);
+                                    20, y, 320, 20, h, (HMENU)(INT_PTR)(ID_CHECK_START + i), 0, 0);
             SendMessage(cb, WM_SETFONT, (WPARAM)font, TRUE);
 
             HWND tx = CreateWindowA("STATIC", gTweaks[i].desc, WS_CHILD|WS_VISIBLE,
