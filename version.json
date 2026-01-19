@@ -1,5 +1,5 @@
 {
   "product": "SHYX TWEAKS PREMIUM",
-  "version": "1.0.0",
-  "notes": "Auto-updater enabled. Downloads latest EXE from GitHub Releases."
+  "version": "1.0.1",
+  "notes": "• Fixed updater reliability\\n• Added update prompt on launch\\n• Shows release notes after updating\\n"
 }

@@ -12,8 +12,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-gcc -O2 -s -mwindows -o SHYX_TWEAKS_PREMIUM.exe SHYX_TWEAKS_PREMIUM.c ^
-  -lcomctl32 -lshell32 -luxtheme -lgdi32
+gcc -O2 -s -mwindows -o SHYX_TWEAKS_PREMIUM.exe SHYX_TWEAKS_PREMIUM.c -lcomctl32 -lshell32 -lurlmon
 
 if errorlevel 1 (
   echo Build failed.
